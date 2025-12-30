@@ -1,11 +1,10 @@
-// 1. Extend SpringBootServletInitializer
-public class MobileStoreApplication extends SpringBootServletInitializer {
+package com.example.mobilestore;
 
-    // 2. Override this specific method
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(MobileStoreApplication.class);
-    }
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MobileStoreApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MobileStoreApplication.class, args);
